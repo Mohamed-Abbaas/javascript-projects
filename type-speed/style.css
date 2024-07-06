@@ -1,0 +1,156 @@
+:root {
+    --main-color: #2196f3;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #eee;
+}
+.title {
+    color: white;
+    background-color: var(--main-color);
+    font-size: 30px;
+    padding: 20px;
+    margin-top: -10px;
+    text-align: center;
+}
+
+.container {
+    width: 750px;
+    margin: 10px auto;
+}
+.info {
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+}
+.word {
+    margin: 0;
+}
+.start {
+    margin: 0;
+    background-color: #009688;
+    margin-top: 20px;
+    padding: 20px 0;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+}
+.playing {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: var(--main-color);
+    text-align: center;
+    font-size: 50px;
+    user-select: none;
+}
+.difficulty,
+.duration  {
+    color: #009688;
+    font-weight: bold;
+}
+.input {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 100%;
+    border: 2px solid var(--main-color);
+    outline: none;
+    height: 70px;
+    padding-left: 40%;
+    text-transform: capitalize;
+    caret-color: var(--main-color);
+}
+.words {
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+.span {
+    color: white;
+    padding: 2px 6px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    background-color: var(--main-color);
+    font-weight: bold;
+}
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: white;
+}
+.total,
+.score,
+.the-second {
+    color: #009688;
+    font-weight: bold;
+}
+.diffi {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: white;
+    margin-top: 10px;
+    padding: 10px;
+}
+.diffi input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+}
+.diffi > div {
+    margin-bottom: 10px;
+}
+label {
+    cursor: pointer;
+    margin-left: 10px;
+    position: relative;
+}
+label::before {
+    content: "";
+    border: 2px solid #888;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    position: absolute;
+    left: -20px;
+    transition: 0.3s;
+    top: 1px;
+}
+.input {
+    font-size: 20px;
+}
+label::after {
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    transition: 0.3s;
+    content: "";
+    left: -17px;
+    top: 4px;
+}
+input[type="radio"]:checked + label::after {
+    width: 9px; 
+    height: 9px;
+}
+input[type="radio"]:checked + label::before {
+    border-color: var(--main-color);
+}
+.result {
+    text-align: center;
+    font-size: 50px;
+    color: red;
+}
+.result2 {
+    text-align: center;
+    font-size: 50px;
+    color: #009688;
+}

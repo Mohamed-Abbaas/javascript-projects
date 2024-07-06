@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>type speed</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <h1 class="title">Typing Speed Test Game</h1>
+    <div class="container">
+        <div class="game">
+            <div class="info">You are playing on <span class="difficulty"></span> and you have <span class="duration"></span> Seconds To Type The Word</div>
+            <div class="diffi">
+                <div class="one">
+                    <input type="radio" id="easy" name="diff" value="easy">
+                    <label for="easy"> Easy</label>
+                </div>
+                <div class="two">
+                    <input type="radio" id="normal" name="diff" value="normal" checked>
+                    <label for="normal"> Normal</label>
+                </div>
+                <div class="three">
+                    <input type="radio" id="hard" name="diff" value="hard">
+                    <label for="hard"> Hard</label>
+                </div>
+            </div>
+            <h2 class="start">Start Game</h2>
+            <h1 class="word"></h1>
+            <input type="text" class="input">
+            <div class="words"></div>
+            <div class="solved"></div>
+            <div class="stats">
+                <div class="left">Time Left: <span class="the-second"></span> Seconds</div>
+                <div class="right">Score: <span class="score"></span> From <total class="total"></total></div>
+            </div>
+        </div>
+    </div>
+    <div class="result"></div>
+    <div class="result2"></div>
+    <script src="main.js"></script>
+</body>
+</html>
