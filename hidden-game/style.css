@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+/* Start The Begining  */
+.the-begining {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 100px;
+    font-size: 30px;
+    border: 2px solid blue;
+    padding: 20px;
+}
+/* End The Begining  */
+/* Start Starting  */
+.starting {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: #3737ffa3;
+    height: 100%;;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+}
+.starting h2 {
+    background-color: #ff4848;;
+    font-size: 40px;
+    border-radius: 6px;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+/* End Starting  */
+/* Start Container  */
+.container {
+    border: 2px solid blue;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding: 2px;
+}
+.container .box {
+    position: relative;
+    height: 200px;
+    transform-style: preserve-3d;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.container .face {
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid blue;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.container .front {
+    background-color: grey;
+}
+.container .front::before {
+    content: "?";
+    color: #fff;
+    font-size: 140px;
+}
+.container .back {
+    transform: rotateY(180deg);
+    background-color: grey;
+    padding: 10px;
+}
+.container .back img {
+    width: 140px;
+    height: 140px;
+}
+.show,
+.has-match {
+    transform: rotateY(180deg);
+}
+.congrat {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(43 210 34 / 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px 15px;
+    border-radius: 6px;
+    background-color: white;
+}
+.congrat h2 {
+    color: green;
+    font-weight: bold;
+    font-size: 40px;
+} 
+.fa-refresh {
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer
+}  
+/* End Container  */
