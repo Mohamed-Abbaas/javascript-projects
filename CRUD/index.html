@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUDS</title>
+    <link rel="stylesheet" href="styling/style.css">
+</head>
+<body>
+    <h1>Cruds</h1>
+    <h2>Create Read Update Delete Search</h2>
+    <div class="container">
+        <input type="text" placeholder="title" class="title">
+        <div class="flex">
+            <input type="number" min="0" class="price" placeholder="price">
+            <input type="number" min="0" class="taxes" placeholder="taxes">
+            <input type="number" min="0" class="ads" placeholder="ads">
+            <input type="number" min="0" class="discount" placeholder="discount">
+            <div class="total">Total: <span class="total-value"></span></div>
+        </div>
+        <input type="number" class="count" min="1" default="1" placeholder="Count">
+        <input type="text" class="category" placeholder="Category">
+        <p class="create">Create</p>
+        <input type="text" class="search" placeholder="Search By The Title">
+        <div class="flex2">
+            <p class="sort search1 clicked">Search By The Title</p>
+            <p class="sort search2">Search By The Category</p>
+        </div>
+        <p class="delete-all">Delete All (<span class="deleted"></span>)</p>
+        <table>
+            <tr>
+                <th>id</th>
+                <th>title</th>
+                <th>price</th>
+                <th>taxes</th>
+                <th>ads</th>
+                <th>discount</th>
+                <th>total</th>
+                <th>category</th>
+                <th>update</th>
+                <th>delete</th>
+            </tr>
+        </table>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
