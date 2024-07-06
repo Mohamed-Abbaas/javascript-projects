@@ -1,0 +1,72 @@
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media (min-width: 991px) {
+    .container {
+        width: 950px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media(min-width: 1200px) {
+    .container {
+        width: 1170px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media (max-width: 767px) {
+    .container {
+        width: calc(100% - 10px);
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+.container header {
+    width: 100%;
+    background-color: rgb(217, 111, 111);
+    height: 100px;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 40px;
+
+}
+.game-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    width: 100%;
+    margin-left: auto;
+    margin-right:auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 320px;
+}
+.game-content .box {
+    height: 100px;
+    cursor: pointer;
+    width: 100px;
+    background-color: rgb(217, 111, 111);
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+}  
+.game-content .box:hover { 
+    background-color: black;
+}
+big {
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+}
